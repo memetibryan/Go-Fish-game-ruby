@@ -1,7 +1,8 @@
 require('sinatra')
   require('sinatra/reloader')
   require('descriptive_statistics')
-  require('./lib/go_fish')
+  require('./lib/gamer_one')
+  require('./lib/gamer_two')
   also_reload('lib/**/*.rb')
 
   get('/') do
@@ -14,11 +15,11 @@ require('sinatra')
   end
 
   get('/player2') do
-    @gamer2 = params.fetch("go2").b()
+    @gamer2 = params.fetch("go2").two()
     erb(:index)
   end
 
-  get('/submitter') do
+  get('/form') do
     @player_one = params.fetch('player_one')
     @player_two = params.fetch('player_two')
     erb(:index)

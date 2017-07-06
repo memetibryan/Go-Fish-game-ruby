@@ -1,6 +1,7 @@
 require('rspec')
 require('descriptive_statistics')
-  require('go_fish')
+  require('gamer_one')
+  require('gamer_two')
 
   describe('#a') do
       it ("expects the computer to check if the opponent has the requested 'input' of the current player") do
@@ -14,14 +15,14 @@ require('descriptive_statistics')
     end
   end
 
-  describe('#a') do
+  describe('#two') do
       it ("expects the computer to check if the opponent has the requested 'input' of the current player") do
-      expect("K".a().eql?(true))
+      expect("K".two().eql?(true))
     end
   end
 
-  describe('#b') do
+  describe('#two') do
       it ("expects the computer to check if the opponent has the requested 'input' of the current player") do
-      expect("K".b().eql?(false))
+      expect("K".two().eql?(false))
     end
   end
