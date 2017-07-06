@@ -1,0 +1,26 @@
+<h1><strong>Go Fish</strong></h1>
+
+<h3>Input a letter to request</h3>
+  <div class="row">
+    <div class = "col-md-6">
+      <h3><%= @player_one %></h3>
+      <form action="/player1">
+        <div class="form-group">
+          <label for="go1">Player 2</label>
+          <input id="go1" name="go1" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn-danger">go fish!</button>
+      </form>
+    </div>
+
+    <div class = "col-md-6">
+      <h3><%= @player_two %></h3>
+      <form action="/player2">
+        <div class="form-group">
+          <label for="go2">Player 2</label>
+          <input id="go2" name="go2" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn-danger">go fish!</button>
+      </form>
+    </div>
+  </div>
