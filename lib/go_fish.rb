@@ -7,16 +7,17 @@ class String
     @@points_one = []
     @@points_two = []
 
-    puts @@player_one
-
 	def a
 		char_1 = self
+
 		if @@player_two.include?(char_1)
 			@@points_one.push (10)
-			return @@points_one
+
+			total = @@points_one.sum
+			return total
 		else
 			@@points_one.push (0)
-			return @@points_one
+			return "You Got 0"
 		end
 	end
 
@@ -24,10 +25,12 @@ class String
 		char_2 = self
 		if @@player_one.include?(char_2)
 			@@points_two.push (10)
-			return @@points_two
+			
+			total = @@points_two.sum
+			return total
 		else
 			@@points_two.push (0)
-			return @@points_two
+			return "You Got 0"
 		end
 	end
 end

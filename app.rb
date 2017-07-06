@@ -1,5 +1,6 @@
 require('sinatra')
   require('sinatra/reloader')
+  require('descriptive_statistics')
   require('./lib/go_fish')
   also_reload('lib/**/*.rb')
 
