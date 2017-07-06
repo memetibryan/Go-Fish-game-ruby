@@ -20,7 +20,7 @@ class String
 			return total
 		else
 			@@points_one.push (0)
-			return "You Got 0! Next Player"
+			return "Go Fish! Next Player"
 		end
 	end
 end
