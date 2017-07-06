@@ -1,8 +1,14 @@
 require('rspec')
   require('go_fish')
 
-  # describe('#game') do
-  #     it ("expects the computer to get a random word from the pre-written array of words") do
-  #     expect("a".game().eql?("won"))
-  #   end
-  # end
+  describe('#a') do
+      it ("expects the computer to check if the opponent has the requested 'input' of the current player") do
+      expect("A".a().eql?(true))
+    end
+  end
+
+  describe('#b') do
+      it ("expects the computer to check if the opponent has the requested 'input' of the current player") do
+      expect("A".b().eql?(false))
+    end
+  end

@@ -4,9 +4,10 @@
   <div class="row">
     <div class = "col-md-6">
       <h3><%= @player_one %></h3>
+      <h4><%= @gamer1 %></h4>
       <form action="/player1">
         <div class="form-group">
-          <label for="go1">Player 2</label>
+          <label for="go1">Player 1</label>
           <input id="go1" name="go1" class="form-control" type="text">
         </div>
         <button type="submit" class="btn-danger">go fish!</button>
@@ -15,6 +16,7 @@
 
     <div class = "col-md-6">
       <h3><%= @player_two %></h3>
+      <h4><%= @gamer2 %></h4>
       <form action="/player2">
         <div class="form-group">
           <label for="go2">Player 2</label>
