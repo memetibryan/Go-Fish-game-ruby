@@ -7,6 +7,10 @@ class String
 
 	def two	
 		char_2 = self
+		if char_2.length > 1
+			return "Cheated, only one letter allowed"
+		end
+
 		if @@player_one.include?(char_2)
 			@@points_two.push (10)
 			

@@ -8,6 +8,9 @@ class String
 
 	def a
 		char_1 = self
+		if char_1.length > 1
+			return "Cheated, only one letter allowed"
+		end
 
 		if @@player_two.include?(char_1)
 			@@points_one.push (10)
