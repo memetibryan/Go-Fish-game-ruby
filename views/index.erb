@@ -1,37 +1,34 @@
 <h1><strong>Go Fish</strong></h1>
-
 <h4>The card pack has: 2 3 4 5 6 7 8 9 10 J Q K A D S C </h4>
 <ul>
-<li>Remember Total = 100</li>
-<li>The computer shuffles the cards. Compete to see who gets all the points.</li>
-<li>Letters input should be in capital letters only !!.</li>
-<li>Numbers included are allowed.</li>
-<h3>Have FUN!!!!!</h3>
+    <li>Remember Total = 100</li>
+    <li>The computer shuffles the cards. Compete to see who gets all the points.</li>
+    <li>Letters input should be in capital letters only !!.</li>
+    <li>Numbers included are allowed.</li>
+    <h3>Have FUN!!!!!</h3>
 </ul>
-
 <h3>Input a letter to request</h3>
-  <div class="row">
-    <div class = "col-md-6">
-      <h3><%= @player_one %></h3>
-      <h4><%= @gamer1 %></h4>
-      <form action="/player1">
-        <div class="form-group">
-          <label for="go1">Player 1</label>
-          <input id="go1" name="go1" class="form-control" type="text" class="rq-form-element" autofocus/>
-        </div>
-        <button type="submit" class="btn">Request!</button>
-      </form>
+<div class="row">
+    <div class="col-md-6">
+        <h3><%= @player_one %></h3>
+        <h4><%= @gamer1 %></h4>
+        <form action="/player1">
+            <div class="form-group">
+                <label for="go1">Player 1</label>
+                <input id="go1" name="go1" class="form-control" type="text" class="rq-form-element" autofocus/>
+            </div>
+            <button type="submit" class="btn">Request!</button>
+        </form>
     </div>
-
-    <div class = "col-md-6">
-      <h3><%= @player_two %></h3>
-      <h4><%= @gamer2 %></h4>
-      <form action="/player2">
-        <div class="form-group">
-          <label for="go2">Player 2</label>
-          <input id="go2" name="go2" class="form-control" type="text" class="rq-form-element" autofocus/>
-        </div>
-        <button type="submit" class="btn">Request!</button>
-      </form>
+    <div class="col-md-6">
+        <h3><%= @player_two %></h3>
+        <h4><%= @gamer2 %></h4>
+        <form action="/player2">
+            <div class="form-group">
+                <label for="go2">Player 2</label>
+                <input id="go2" name="go2" class="form-control" type="text" class="rq-form-element" autofocus/>
+            </div>
+            <button type="submit" class="btn">Request!</button>
+        </form>
     </div>
-  </div>
+</div>
